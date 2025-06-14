@@ -22,7 +22,7 @@ export default function FlipClock() {
   return (
     <div className="flex gap-6 justify-center items-end text-center">
       <div>
-        <div className="flex gap-1">
+        <div className="flex gap-2">
           {[...hours].map((digit, i) => (
             <FlipDigit key={`h${i}`} digit={digit} />
           ))}
@@ -31,7 +31,7 @@ export default function FlipClock() {
       </div>
 
       <div>
-        <div className="flex gap-1">
+        <div className="flex gap-2">
           {[...minutes].map((digit, i) => (
             <FlipDigit key={`m${i}`} digit={digit} />
           ))}
@@ -40,7 +40,7 @@ export default function FlipClock() {
       </div>
 
       <div>
-        <div className="flex gap-1">
+        <div className="flex gap-2">
           {[...seconds].map((digit, i) => (
             <FlipDigit key={`s${i}`} digit={digit} />
           ))}
