@@ -7,9 +7,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-orbitron: var(--font-orbitron);
 }
-
-
 
 @layer base {
   :root {
@@ -67,13 +66,15 @@
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html,
+  body {
+    @apply transition-colors duration-300;
   }
 }
