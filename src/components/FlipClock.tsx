@@ -20,7 +20,7 @@ export default function FlipClock() {
   const { hours, minutes, seconds } = formatTime(time);
 
   return (
-    <div className="flex gap-6 justify-center items-end text-center">
+    <div className="flex gap-7 justify-center items-end text-center">
       <div>
         <div className="flex gap-2">
           {[...hours].map((digit, i) => (
